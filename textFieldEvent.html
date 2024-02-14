@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event On TextField</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+       $(document).ready(function(){
+          $("input").keyup(function(){
+               var v=$("#search").val();
+               $("#rec").html(v);
+          })
+       })
+    </script>
+</head>
+<body>
+    <input type="text" id="search">
+    <div id="rec"></div>
+</body>
+</html>
