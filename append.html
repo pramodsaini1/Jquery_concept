@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Append-Concept</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+             $("button").click(function(){
+                 var v=$(this).text();
+                 $("#rec").append(v);
+             })
+        })
+    </script>
+</head>
+<body>
+<script>
+for(i=1;i<=5;i++){
+    document.write("<button>"+i+"</button>");
+}
+</script>
+<div id="rec"></div>
+</body>
+</html>
